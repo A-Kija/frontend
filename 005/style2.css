@@ -1,4 +1,43 @@
 
+
+/* h1.animal1 {
+    color:teal;
+} */
+
+.predator.animal1 {
+    padding: 8px;
+    border: 1px solid gray;
+    color:hotpink;
+}
+
+#a1 {
+    color:tomato;
+}
+
+.animal1 {
+    color: thistle;
+}
+
+h1.animal1 span {
+    color: indigo;
+}
+
+.animal1 span {
+    color: yellowgreen;
+}
+
+.animal2 {
+    color: tomato;
+}
+.animal3 {
+    color: yellowgreen;
+}
+
+
+
+
+
+
 span {
     color: red;
 }
@@ -9,14 +48,46 @@ code {
     color: green;
 }
 
+body {
+    background-color: mistyrose;
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    margin: 0;
+}
 
-.animal1 {
-    color: thistle;
+div {
+    box-sizing: border-box;
+    zoom: 1;
+    letter-spacing: normal;
+    text-rendering: auto;
 }
-.animal2 {
-    color: tomato;
+
+
+.box {
+    border: 1px solid hotpink;
+    background-color: lightblue;
+    padding: 10px;
+    /* margin: 5px; */
+    height: 180px;
+    width: 33.33333%;
+    display: inline-block;
+    
 }
-.animal3 {
-    color: yellowgreen;
+
+.box span {
+    background-color: lightslategray;
+    color: lemonchiffon;
+    display: block;
+    width: 40%;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    top: calc(50% - 10px);
 }
+
+
+
+
 
