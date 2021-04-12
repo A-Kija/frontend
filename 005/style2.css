@@ -65,13 +65,17 @@ div {
 
 .box {
     border: 1px solid hotpink;
+    border-left: none;
     background-color: lightblue;
-    padding: 10px;
+    padding: 5px;
     /* margin: 5px; */
     height: 180px;
     width: 33.33333%;
     display: inline-block;
-    
+}
+
+.box.first {
+    border-left: 1px solid hotpink;
 }
 
 .box span {
@@ -86,6 +90,8 @@ div {
     position: relative;
     top: calc(50% - 10px);
 }
+
+
 
 
 

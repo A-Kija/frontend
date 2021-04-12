@@ -1,0 +1,89 @@
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+    /* margin: 20px; */
+    
+  }
+
+div.relative {
+    position: relative;
+    border: 3px solid #73AD21;
+    /* margin: 20px; */
+    /* left: 127px; */
+    top: 60px;
+  }
+
+
+  div.absolute {
+    position: absolute;
+    border: 3px solid #73AD21;
+    /* margin: 20px; */
+    left: 127px;
+    top: 200px;
+    width: 100%;
+  }
+
+
+  div.fixed {
+    position: fixed;
+    border: 3px solid #73AD21;
+    /* margin: 20px; */
+    /* left: 127px; */
+    top: 250px
+  }
+
+
+  div.sticky {
+    position: sticky;
+    border: 3px solid #73AD21;
+    /* margin: 20px; */
+    /* left: 127px; */
+    top: 50px
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  .container {
+      padding: 20px;
+      width: 300px;
+      position: relative;
+  }
+
+  .circle {
+    padding: 20px;
+    border: 1px solid chocolate;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 30;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+  .container img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .container .title {
+    width: calc(100% - 100px);
+    background-color: cyan;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    opacity: 0.9;
+    z-index: 50;
+  }
