@@ -45,7 +45,11 @@ div.relative {
       box-sizing: border-box;
   }
 
-  .container {
+  body {
+    font-family: Lobster, cursive;
+  }
+
+  .jonas {
       padding: 20px;
       width: 300px;
       position: relative;
@@ -65,8 +69,7 @@ div.relative {
     left: 0;
 }
 
-
-  .container img {
+  .jonas img {
     width: 100%;
     height: auto;
     display: inline-block;
@@ -74,7 +77,7 @@ div.relative {
     z-index: 10;
   }
 
-  .container .title {
+  .jonas .title {
     width: calc(100% - 100px);
     background-color: cyan;
     font-size: 18px;
@@ -86,4 +89,10 @@ div.relative {
     right: 50px;
     opacity: 0.9;
     z-index: 50;
+    /* font-family: Lobster, cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+  }
+
+  .jonas .title .f1 {
+    font-family: 'Indie Flower', cursive;
   }
