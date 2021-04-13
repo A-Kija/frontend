@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: mistyrose;
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.container {
+    padding: 18px;
+}
+
+.row {
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    border-top: 3px dashed gainsboro;
+}
+
+.box {
+    zoom: 1;
+    letter-spacing: normal;
+    text-rendering: auto;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.box.last {
+    padding-right: 0;
+}
+.box.first {
+    padding-left: 0;
+}
+
+.w1-1 {
+    width: 100%;
+}
+
+.w1-2 {
+    width: 50%;
+}
+
+.w1-3 {
+    width: 33.33333%;
+}
+
+.w1-4 {
+    width: 25%;
+}
+
+.img-container {
+    margin: 15px 5px;
+    padding: 10px;
+    border: 4px solid gold;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img-container p {
+    margin-right: 60px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box.last .img-container{
+    margin-right: 0;
+}
+
+.box.first .img-container{
+    margin-left: 0;
+}
+
+.title {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: hsla(51, 100%, 50%, 0.739);
+    color: white;
+    border-radius: 50%;
+    right: 20px;
+    top: 20px;
+    display: block;
+}
+
+.title span{
+    position: relative;
+    top: 10px;
+    left: 5px;
+    font-size: 20px;
+    line-height: 1;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Monoton', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: teal;
+    letter-spacing: 2px;
+}
+
+h1 span {
+    display: inline-block;
+    padding: 6px;
+    font-size: 140%;
+
+    font-family: 'Monoton', cursive;
+}
