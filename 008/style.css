@@ -1,0 +1,51 @@
+.op:hover {
+    /* width: 0; 
+    height: 0; 
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    
+    border-bottom: 200px solid hotpink; */
+}
+
+.op {
+    width: 1000px; 
+    display: inline-block;
+    /* height: 100px; 
+    background-color: black; */
+    color:red;
+    /* transition: all 1s cubic-bezier(0.410, -0.505, 0.000, 1.650); */
+}
+
+
+.op::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: red;
+}
+
+.op::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: red;
+}
+
+.parent p {
+    color: lightsalmon;
+}
+
+.parent .abc p:first-child {
+    color:saddlebrown;
+}
+
+.parent p:last-child {
+    color:rebeccapurple;
+    font-weight: bold;
+}
+
+.parent p:first-child {
+    color:red;
+}
