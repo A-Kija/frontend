@@ -1,0 +1,39 @@
+p {
+    color: yellow;
+}
+
+h1 p:first-child {
+    color: green;
+}
+
+p:first-child {
+    color: blue;
+}
+
+
+/* div:first-child {
+    background-color: lavenderblush;
+} */
+
+/* body > div  {
+    background-color: lightsalmon;
+} */
+
+div > div  {
+    background-color: violet;
+}
+
+
+p:last-child {
+    color: red;
+}
+
+
+body > div > div ~ p {
+    background-color: firebrick;
+}
+
+
+div :nth-child(odd) {
+    border: 1px solid black; 
+}

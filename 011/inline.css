@@ -1,0 +1,26 @@
+.row {
+    letter-spacing: -.31em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    letter-spacing: normal;
+    display: inline-block;
+    background-color: aquamarine;
+    vertical-align: top;
+    /* height: 450px; */
+}
+
+
+.box p {
+    max-width: 250px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.col3 {
+    /* width: 33.33333%; */
+}
