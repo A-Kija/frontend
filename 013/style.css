@@ -121,3 +121,15 @@ body {
     font-size: 5vw;
 }
 
+/* BACK */
+
+.back {
+    width: 696px;
+    height: 896px;
+    background-color: mediumorchid;
+    background-image: url("https://e7.pngegg.com/pngimages/593/868/png-clipart-steam-locomotive-train-train-rail-transport-old-time-transportation-steam-locomotive-train-s-car-monochrome-thumbnail.png");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: 40% 30%;
+}
+
