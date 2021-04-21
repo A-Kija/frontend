@@ -1,0 +1,65 @@
+body, header, nav, ul, li {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+header li {
+    padding: 15px;
+    font-size: 18px;
+    background-color:darkblue;
+    float: left;
+    transition: all .3s;
+}
+
+header li:hover {
+    background-color:rgb(1, 1, 211);
+}
+
+header li a {
+    text-decoration: none;
+    color:crimson;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+header li:hover a {
+    border-bottom: 1px solid crimson;
+}
+
+ul {
+    list-style: none;
+    background-color:darkblue;
+}
+ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    header li {
+        padding: 5px 15px;
+        font-size: 24px;
+        background-color:darkblue;
+        float: none;
+    }
+    header li a {
+        font-weight: 700;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header li:hover {
+        background-color:darkblue;
+    }
+
+    header li:hover a {
+        border-bottom: none;
+    }
+
+
+}
