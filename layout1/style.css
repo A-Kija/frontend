@@ -17,16 +17,16 @@ img {
 }
 
 .row {
-    letter-spacing: -.31em;
-    text-rendering: optimizespeed;
+    /* letter-spacing: -.31em;
+    text-rendering: optimizespeed; */
     border-top: 3px dashed gainsboro;
 }
 
 .box {
-    zoom: 1;
+    /* zoom: 1;
     letter-spacing: normal;
     text-rendering: auto;
-    display: inline-block;
+    display: inline-block; */
     padding: 0 10px;
 }
 
