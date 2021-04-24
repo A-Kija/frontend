@@ -2,6 +2,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100vh;
+    background-color: lightsteelblue;
 }
 .main {
     /* position: relative; */
@@ -80,6 +81,14 @@ li a {
     margin: 10px;
     position: relative;
     cursor: pointer;
+}
+.hamburger span {
+    width: 30px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: -7px;
 }
 .hamburger::before, .hamburger::after {
     content: '';
