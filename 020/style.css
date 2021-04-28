@@ -20,6 +20,21 @@ img {
     position: relative;
 }
 
+.image-holder span {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  left: calc(50% - 15px);
+  display: none;
+  background-color: lightsteelblue;
+  border-radius: 50%;
+}
+
 .image-holder input{
     display: none;
 }
@@ -35,6 +50,11 @@ img {
 .image-holder input:checked + img{
     display: inline-block;
     opacity: 1;
+}
+
+.image-holder input:checked + img + span{
+    display: block;
+
 }
 
 .circle-holder {
