@@ -1,0 +1,8 @@
+.bg {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid lightcoral;
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+}

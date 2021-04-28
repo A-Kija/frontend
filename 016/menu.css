@@ -1,5 +1,7 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+
+    font-family: Helvetica, 'Helvetica Neue', 'Lucida Grande', sans-serif;
     margin: 0;
     height: 100vh;
     background-color: lightsteelblue;
@@ -70,6 +72,17 @@ li a {
     left: 0;
 }
 
+.home-link::after {
+    content: '\f6be';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:violet;
+}
+
+.svg-container svg{
+    width: 50px;
+    fill: tomato;
+}
 
 
 .hamburger {
@@ -90,6 +103,7 @@ li a {
     cursor: pointer;
     top: -7px;
 }
+
 .hamburger::before, .hamburger::after {
     content: '';
     width: 30px;
