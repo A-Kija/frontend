@@ -1,23 +1,24 @@
 .bg {
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid lightcoral;
-    background-size: fill;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid lightcoral;
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: inline-block;
+  width: 100%;
+  height: auto;
+  display: inline-block;
 }
+
 .image-holder {
-    width: 700px;
-    height: 400px;
-    border: 1px solid black;
-    overflow: hidden;
-    position: relative;
+  width: 700px;
+  height: 400px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-holder span {
@@ -35,55 +36,55 @@ img {
   border-radius: 50%;
 }
 
-.image-holder input{
-    display: none;
+.image-holder input {
+  display: none;
 }
 
 .image-holder img {
-    opacity: 0;
-    transition: all 0.5s;
-    position: absolute;
-    top: 0;
-    left: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.image-holder input:checked + img{
-    display: inline-block;
-    opacity: 1;
+.image-holder input:checked + img {
+  display: inline-block;
+  opacity: 1;
 }
 
-.image-holder input:checked + img + span{
-    display: block;
-
+.image-holder input:checked + img + span {
+  display: block;
 }
 
 .circle-holder {
-    margin-top: 30px;
-    width: 700px;
+  margin-top: 30px;
+  width: 700px;
 }
 
-.circle-holder .center{
-    width: 130px;
-    margin: 0 auto;
+.circle-holder .center {
+  width: 130px;
+  margin: 0 auto;
 }
 
-.circle-holder .center label{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 10px;
-    cursor: pointer;
+.circle-holder .center label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .c1 {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 .c2 {
-    background-color:lightgreen;
+  background-color: lightgreen;
 }
 
 .c3 {
-    background-color:lightsteelblue;
+  background-color: lightsteelblue;
 }
+/*# sourceMappingURL=style.css.map */
