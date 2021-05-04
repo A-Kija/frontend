@@ -1,6 +1,10 @@
 .grid-container {
     letter-spacing: -.31em;
     text-rendering: optimizeSpeed;
+    &.fixed {
+        max-width: $container;
+        margin: 0 auto;
+    }
 }
 
 .sm-1,
@@ -30,7 +34,7 @@
     width: 16.66667%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $md) {
     .md-1,
     .md-1-1,
     .md-1-2,
@@ -59,7 +63,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $lg) {
     .lg-1,
     .lg-1-1,
     .lg-1-2,
