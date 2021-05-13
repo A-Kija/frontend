@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMGS</title>
+</head>
+<body>
+    <!-- <div class="img-container">
+    <img src="/031/img/Big-Train.jpg" alt="Big Train">
+    </div> -->
+
+
+    <img 
+    
+    srcset="
+        /031/img/Big-Train-1000.jpg 1000w,
+        /031/img/Big-Train-Only.jpg 600w,
+        /031/img/Big-Train-250.jpg 250w
+    "
+
+    sizes="
+        (max-width: 400px) 1000px,
+        (max-width: 900px) 600px,
+        1000px
+    "
+
+
+     src="/031/img/Big-Train.jpg"
+     alt="Big Train">
+
+
+
+     <picture>
+        <source media="(max-width: 799px)" srcset="/031/img/Big-Train-Only.jpg">
+        <source media="(min-width: 800px)" srcset="/031/img/Big-Train-1000.jpg">
+        <img src="/031/img/Big-Train-1000.jpg" alt="Chris standing up holding his daughter Elva">
+      </picture>
+
+
+</body>
+</html>

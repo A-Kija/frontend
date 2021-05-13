@@ -1,0 +1,62 @@
+:root {
+    /* --blue: blue; */
+    --yel: yellow;
+    --red: black;
+
+    --maxax: 600px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: indianred;
+    }
+}
+
+.block {
+    --yel: gray;
+    min-height: 200px;
+    background-color: var(--yel);
+    border: 2px dotted gold;
+}
+
+.container {
+    display: flex;
+    --yel: green;
+}
+
+.bin {
+    width: 33.33333%;
+    height: 100px;
+    /* background-color: aquamarine; */
+    background-color: var(--yel);
+}
+
+.ben {
+    width: 33.33333%;
+    height: 100px;
+}
+
+.bin + .bin {
+/* background-color: cadetblue; */
+    background-color: var(--blue, red);
+    --red: rgb(50, 92, 85);
+}
+
+.bin + .bin + .bin{
+    /* background-color:darkseagreen; */
+    background-color: var(--red, red);
+}
+
+
+
+
+
