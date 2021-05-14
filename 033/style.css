@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+
+.container {
+    width: 100%;
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid gray;
+}
+
+
+[name=tekstas2]:hover {
+    background-color:yellowgreen;
+}
+
+input::placeholder {
+    color: red;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+input:focus {
+    border-color:teal;
+}
+
+input:active {
+    border-color: tomato;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+
+
+.fileUpload {
+	background: #00bcbe;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1.25em auto;/*20px/16px 0*/
+	overflow: hidden;
+	padding: 0.875em;/*14px/16px*/
+	position: relative;
+	text-align: center;
+	width: 120px;
+   cursor: pointer;
+}
+.fileUpload:hover, .fileUpload:active, .fileUpload:focus {
+	background: #00a2a4;
+  cursor: pointer;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 148px;
+    height: 46px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
