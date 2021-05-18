@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.container {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid lightcyan;
+}
+
+/* attr(name) */
+
+[for=labas-id]::after {
+    content: attr(data-label-text);
+    display: inline-block;
+    margin-left: 10px;
+}
+[for=labas-id]:hover::after {
+    content: attr(data-label-hello);
+}
+
+
+/* calc() */
+#calc-use {
+    display: flex;
+}
+
+#calc-use1 {
+    height: 20px;
+    background-color: lightpink;
+    width: calc(100vh - 80%);
+}
+#calc-use2 {
+    height: 20px;
+    background-color:lightseagreen;
+    width: calc(100% - 80vh);
+}
+
+/* cubic-bezier() */
+#bezier {
+    display: block;
+    position: relative;
+    height: 100px;
+}
+#cubic {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: mediumslateblue;
+    transition: left 3s;
+    transition-timing-function: cubic-bezier(.05,1.36,.67,-0.86);
+}
+
+#go {
+    margin-bottom: 10px;
+    cursor:crosshair;
+    color: midnightblue;
+    display: inline-block;
+}
+
+#go:hover + #bezier #cubic {
+    left: calc(100% - 100px);
+}
+
+/* rgb() hsl() */
+
+#rgb, #hsl {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 9px;
+    padding: 5px;
+    display: inline-block;
+    text-align: justify;
+}
+
+#rgb {
+    background-color: rgb(204, 229, 255);
+}
+#hsl {
+    background-color: hsl(176, 53%, 71%);
+}
+
+
+/* rgba() hsla() */
+
+#rgba, #hsla {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 9px;
+    padding: 5px;
+    display: inline-block;
+    text-align: justify;
+}
+#background1 {
+    padding: 25px;
+    background-image: url('background1.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+#rgba {
+    background-color: rgb(204, 229, 255, 0.2);
+}
+#hsla {
+    background-color: hsl(176, 53%, 71%, 0.8);
+}
+
+/* linear-gradient(direction, color1, color2, color3) */
+
+#background2 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, green, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+#background3 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top, green, mediumslateblue, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+/* radial-gradient(shape, size, position, color1, color2, color3) */
+
+#background4 {
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(circle, green, mediumslateblue, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+#background5 {
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(closest-corner at 30% 30%, green, mediumslateblue, #ff000050);
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+/* repeating-linear-gradient(angle, direction, color1, color2, color3) */
+
+#background6 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-linear-gradient(to bottom, green, violet 50px);
+    background-position: center;
+    background-size: contain;
+}
+
+#background7 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-linear-gradient(59deg, green, mediumslateblue 10px, violet 20px);
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* repeating-radial-gradient() */
+
+#background8 {
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-radial-gradient(circle, green, mediumslateblue 5px, violet 60px);
+    background-position: center;
+    background-size: contain;
+}
+
+#background9 {
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-radial-gradient(closest-corner at 30% 30%, green, mediumslateblue 5px, #ff000050 10px);
+    background-position: center;
+    background-size: contain;
+}
+
+#background9:hover {
+    background-image: repeating-radial-gradient(closest-corner at 30% 30%, green, mediumslateblue 8px, #ff000050 10px);
+}
+
+
+#symbol::after {
+    content: '999\2795\278F';
+    display: block;
+    color:hsl(176, 53%, 71%)
+}

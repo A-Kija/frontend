@@ -1,11 +1,25 @@
 .grid-container {
   letter-spacing: -.31em;
   text-rendering: optimizeSpeed;
+  font-size: 0;
 }
 
 .grid-container.fixed {
   max-width: 1000px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container.flex {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.grid-container.flex > div {
+  display: flex;
 }
 
 .sm-1,

@@ -18,19 +18,66 @@
                 <input type="password"  name="slapt">
                 <input type="email"     name="email">
                 <input type="number"    name="skaicius">
-            <div class="fileUpload">
-                <input type="file"      name="paveiksliukas" class="upload">
-                <span>Paveiksliukas</span>
-            </div>
+                <div class="fileUpload">
+                    <input type="file"      name="paveiksliukas" class="upload">
+                    <span>Paveiksliukas</span>
+                </div>
 
-            <textarea name="didis_tekstas" placeholder="tekstas II"></textarea>
+                <textarea name="didis_tekstas" placeholder="tekstas II"></textarea>
+
+                <fieldset>
+                    <legend>Radijo Mygtukai</legend>
+                    <label for="P">Pingvinas</label>
+                    <input type="radio" name="radijo" id="P" checked>
+                    <label for="T">Tigras</label>
+                    <input type="radio" name="radijo" id="T">
+                    <label for="M">Makaka</label>
+                    <input type="radio" name="radijo" id="M">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Check Boksai</legend>
+                    
+                    <input type="checkbox" name="egle" id="E">
+                    <label for="E">Eglė</label>
+                    
+                    <input type="checkbox" name="berzas" id="B">
+                    <label for="B">Beržas</label>
+                    
+                    <input type="checkbox" name="liepa" id="L">
+                    <label for="L">Liepa</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Selektas</legend>
+
+                    <select name="darzoves">
+                        <option value="0" selected>Pasirink daržovę</option>
+                        <option value="m">Morka</option>
+                        <option value="b">Bulvė</option>
+                        <option value="p">Patisonas</option>
+                        <option value="k">Kopūstas</option>
+                    </select>
+
+                    <select name="vaisiai" multiple>
+                        <option value="0" selected>Pasirink vaisių</option>
+                        <option value="o">Obolis</option>
+                        <option value="k">Kriaušė</option>
+                        <option value="s">Slyva</option>
+                        <option value="v">Vyšnia</option>
+                    </select>
+
+
+                </fieldset>
 
             
-
+                <fieldset>
+                    <legend>Mygtukai</legend>
                 <input type="submit"    name="mygtukas" value="GO GO">
                 <button type="submit" name="mygtukas" value="form-352">GO GO</button>
                 <input type="reset"     name="resetas" value="mano puikuolis" disabled>
-                
+            </fieldset>
 
             </form>
 
@@ -42,10 +89,6 @@
             <input type="range" value="range">
             <input type="color" name="color">
             <input type="datetime-local" name="data">
-            
-
-
-
         </div>
     
 </body>

@@ -1,0 +1,115 @@
+@import 'reset';
+@import 'vars';
+@import 'grid';
+
+$header-height: 100px;
+
+$full-padding: 0;
+$fixed-padding: 25px;
+
+$site-bg: lightgray;
+$slider-bg: orange;
+
+
+
+//////////////////////////////
+$header-top-bottom: $header-height / 12;
+$header-top-bottom2: $header-top-bottom * 2;
+
+@mixin border-b {
+    border-bottom: none;
+}
+@mixin border-t {
+    border-top: none;
+}
+
+@mixin border-lf {
+    @include border-b;
+    @include border-t;
+}
+
+
+header {
+    background-color: deepskyblue;
+    height: $header-height;
+}
+
+.main-menu {
+    margin-top: $header-top-bottom;
+    margin-bottom: $header-top-bottom;
+    border: 1px dashed white;
+    @include border-lf;
+    height: $header-height - $header-top-bottom - $header-top-bottom;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: $header-height - $header-top-bottom - $header-top-bottom;
+        li {
+            a {
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}
+
+.section-1 {
+    &__block {
+        padding: $full-padding;
+        border: 1px solid orange;
+        @include border-lf;
+        &__content {
+            background-color: aquamarine;
+            min-height: 200px;
+        }
+    }
+}
+
+
+.section-2 {
+    background-color: $site-bg;
+    &__block {
+        padding: $fixed-padding;
+        &__content {
+            background-color: rgb(96, 170, 145);
+            min-height: 300px;
+        }
+    }
+}
+
+.section-3 {
+    background-color: $site-bg;
+    &__block {
+        padding: $fixed-padding;
+        &__content {
+            background-color: rgb(57, 102, 87);
+            min-height: 450px;
+        }
+    }
+}
+
+.footer {
+    background-color: firebrick;
+    padding: 20px 0;
+    &__block {
+        padding: $fixed-padding;
+        justify-content: center;
+        &__content {
+            border: 2px solid white;
+            @include border-lf;
+            width: 100%;
+            ul {
+                width: 50%;
+                margin: 0 auto;
+                li {
+                    padding: 5px 0 5px 30px;
+                    a {
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
