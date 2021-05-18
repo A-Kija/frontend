@@ -12,6 +12,7 @@ $slider-bg: orange;
 
 
 
+
 //////////////////////////////
 $header-top-bottom: $header-height / 12;
 $header-top-bottom2: $header-top-bottom * 2;
@@ -28,6 +29,7 @@ $header-top-bottom2: $header-top-bottom * 2;
     @include border-t;
 }
 
+.project__alpha_1254879 {
 
 header {
     background-color: deepskyblue;
@@ -112,4 +114,7 @@ header {
             }
         }
     }
+}
+
+
 }

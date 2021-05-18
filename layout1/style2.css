@@ -174,12 +174,12 @@ a {
   }
 }
 
-header {
+.project__alpha_1254879 header {
   background-color: deepskyblue;
   height: 100px;
 }
 
-.main-menu {
+.project__alpha_1254879 .main-menu {
   margin-top: 8.33333px;
   margin-bottom: 8.33333px;
   border: 1px dashed white;
@@ -188,83 +188,83 @@ header {
   height: 83.33333px;
 }
 
-.main-menu ul {
+.project__alpha_1254879 .main-menu ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 83.33333px;
 }
 
-.main-menu ul li a {
+.project__alpha_1254879 .main-menu ul li a {
   font-size: 20px;
   color: white;
 }
 
-.section-1__block {
+.project__alpha_1254879 .section-1__block {
   padding: 0;
   border: 1px solid orange;
   border-bottom: none;
   border-top: none;
 }
 
-.section-1__block__content {
+.project__alpha_1254879 .section-1__block__content {
   background-color: aquamarine;
   min-height: 200px;
 }
 
-.section-2 {
+.project__alpha_1254879 .section-2 {
   background-color: lightgray;
 }
 
-.section-2__block {
+.project__alpha_1254879 .section-2__block {
   padding: 25px;
 }
 
-.section-2__block__content {
+.project__alpha_1254879 .section-2__block__content {
   background-color: #60aa91;
   min-height: 300px;
 }
 
-.section-3 {
+.project__alpha_1254879 .section-3 {
   background-color: lightgray;
 }
 
-.section-3__block {
+.project__alpha_1254879 .section-3__block {
   padding: 25px;
 }
 
-.section-3__block__content {
+.project__alpha_1254879 .section-3__block__content {
   background-color: #396657;
   min-height: 450px;
 }
 
-.footer {
+.project__alpha_1254879 .footer {
   background-color: firebrick;
   padding: 20px 0;
 }
 
-.footer__block {
+.project__alpha_1254879 .footer__block {
   padding: 25px;
   justify-content: center;
 }
 
-.footer__block__content {
+.project__alpha_1254879 .footer__block__content {
   border: 2px solid white;
   border-bottom: none;
   border-top: none;
   width: 100%;
 }
 
-.footer__block__content ul {
+.project__alpha_1254879 .footer__block__content ul {
   width: 50%;
   margin: 0 auto;
 }
 
-.footer__block__content ul li {
+.project__alpha_1254879 .footer__block__content ul li {
   padding: 5px 0 5px 30px;
 }
 
-.footer__block__content ul li a {
+.project__alpha_1254879 .footer__block__content ul li a {
   font-size: 18px;
   color: white;
 }
