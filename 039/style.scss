@@ -1,0 +1,44 @@
+
+
+// .strong-alert:hover {
+//     color: red;
+// }
+
+
+.alert {
+    color:brown;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 20px;
+    width: 200px;
+    .navigation & {
+        color:chartreuse;
+        
+    }
+    [dir=rtl] & {
+        text-align: right;
+        &.bla {
+            color:darkblue;
+        }
+    }
+    & {
+        @extend %strong-alert;
+    }
+}
+
+.navigation .alert {
+    @extend %strong-alert;
+    width: 300px;
+}
+
+%strong-alert:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+.alert {
+  color: brown;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 20px;
+  width: 200px;
+}
+
+.navigation .alert {
+  color: chartreuse;
+}
+
+[dir=rtl] .alert {
+  text-align: right;
+}
+
+[dir=rtl] .alert.bla {
+  color: darkblue;
+}
+
+.navigation .alert {
+  width: 300px;
+}
+
+.alert:hover {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

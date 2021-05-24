@@ -1,0 +1,12 @@
+nav {
+    background-color: darkblue;
+}
+a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+}
+a:hover {
+    color:saturate($color: #df257a, $amount: 0.4)
+}

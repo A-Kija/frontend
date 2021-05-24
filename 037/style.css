@@ -1,0 +1,27 @@
+nav {
+  background-color: darkblue;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+a:hover {
+  color: #e0257a;
+}
+
+h1.kiskis {
+  background-color: tomato;
+}
+
+h1.zuikis {
+  background-color: blueviolet;
+}
+
+h1.triusis {
+  border: 3px solid tomato;
+}
+/*# sourceMappingURL=style.css.map */

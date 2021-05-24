@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,GAAG,CAAC;EACA,gBAAgB,EAAE,QAAQ;CAC7B;;AACD,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;CACf;;AACD,AAAA,CAAC,AAAA,MAAM,CAAC;EACJ,KAAK,EAAC,OAAuC;CAChD;;ACXD,AAAA,EAAE,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,MAAM;CAC3B;;ACFD,AAAA,EAAE,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAC,UAAU;CAC9B;;ACFD,AAAA,EAAE,AAAA,QAAQ,CAAC;EACP,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "style.scss",
+        "sass/_bendras.scss",
+        "sass/_kiskis.scss",
+        "sass/_zuikis.scss",
+        "sass/_triusis.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
