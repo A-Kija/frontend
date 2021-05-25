@@ -71,6 +71,12 @@ nn = n2 + n;
 console.log(typeof nn);
 console.log('n', nn);
 
+var w = true; // Taip, teisingai ir t.t.
+var q = false;// Ne, netiesa, ne taip, klaidinga ir t.t.
+
+
+console.log(typeof w, typeof q, typeof n, typeof g);
+
 
 
 
