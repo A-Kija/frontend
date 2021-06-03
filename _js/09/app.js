@@ -109,7 +109,7 @@ console.log('masyvas', masyvas.slice());
 
 console.log('----------------------3---------------------');
 const abcd = ['A', 'B', 'C', 'D'];
-
+const counter = [0, 0, 0, 0];
 const masyvas3 = [];
 
 for (let i = 0; i < 200; i++) {
@@ -118,11 +118,9 @@ for (let i = 0; i < 200; i++) {
 
 console.log('masyvas3', masyvas3.slice());
 
-const counter = [0, 0, 0, 0];
-
 for (let i = 0; i < masyvas3.length; i++) {
-    counter[ abcd.indexOf(masyvas3[i]) ]++;
-    
+    let index = abcd.indexOf(masyvas3[i]);
+    counter[index]++;
 }
 
 console.log('counter', counter);
