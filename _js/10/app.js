@@ -63,11 +63,13 @@ console.log(masyvai5, count);
 
 console.log('--------------------67---------------------');
 
+// masyvai5[ [0 [i][i][i][i] ]  [1 [][][][] ] ]
+
 const m6 = [];
 const m7 = [];
 
 for (let i = 0; i < masyvai5[0].length; i++) {
-    if (masyvai5[1].indexOf(masyvai5[0][i]) === -1) {
+    if (masyvai5[1].indexOf(masyvai5[0][i]) === -1) { // masyvas.indexOf('ZZ')
         m6.push(masyvai5[0][i]);
     }
     else {
