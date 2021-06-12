@@ -18,12 +18,13 @@ const x = contacts.querySelector('b');
 const did = contacts.querySelector('u');
 
 contacts.addEventListener('click', e => e.target.style.color = 'red');
+
 did.addEventListener('click', e => {
     e.stopPropagation();
     contacts.style.fontSize = '20px';
     });
 
-    x.addEventListener('click', (e) => {
-        // e.stopPropagation();
-        contacts.style = null;
-    });  
+x.addEventListener('click', e => {
+    e.stopPropagation();
+    contacts.style = null;
+});  
