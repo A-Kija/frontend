@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>ATTR</title>
+</head>
+<body>
+    <a href="https://www.vz.lt/">LINKAS</a>
+
+    <button id="vz">VZ</button>
+    <button id="cv">CV</button>
+
+    <!-- './tractors/01.jpg', './tractors/02.jpg', './tractors/03.jpg' -->
+
+    <div>
+        <img class="i1"
+        data-t1="./tractors/01.jpg"
+        data-t2="./tractors/02.jpg"
+        data-t3="./tractors/03.jpg"
+    style="width: 130px;" src="./tractors/01.jpg">
+       
+    </div>
+    <div class="buttons1">
+        <button id="t1">T-1</button>
+        <button id="t2">T-2</button>
+        <button id="t3">T-3</button>
+    </div>
+
+
+
+    <div>
+        <img class="i2" style="width: 130px;" src="./tractors/01.jpg">
+       
+    </div>
+    <div class="buttons2">
+        <button data-img="./tractors/01.jpg">T-1</button>
+        <button data-img="./tractors/02.jpg">T-2</button>
+        <button data-img="./tractors/03.jpg">T-3</button>
+    </div>
+
+
+    <input type="text" name="labas">
+
+    <select name="selis">
+        <option value="0" disabled selected>-----------</option>
+        <option value="t1">Labas 1</option>
+        <option value="t2">Labas 2</option>
+        <option value="t3">Labas 3</option>
+    </select>
+
+
+    <select name="selis2">
+        <option value="0" disabled selected>-----------</option>
+        <option value="./tractors/01.jpg">Labas 1</option>
+        <option value="./tractors/02.jpg">Labas 2</option>
+        <option value="./tractors/03.jpg">Labas 3</option>
+    </select>
+
+    <h1 style="color: blue; margin:30px;"></h1>
+
+
+    <input type="text" name="h1">
+    <button id="h1">Do</button>
+
+    <button id="h2">DoDoDo</button>
+
+
+
+
+</body>
+</html>
