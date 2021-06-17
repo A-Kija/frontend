@@ -29,17 +29,18 @@ document.querySelector('button').addEventListener('click', () => {
     .then(data => h1.innerHTML = data);
 });
 
-
+let output = '';
 fetch('https://in3.dev/vinted/api/brands/all')
   .then(response => response.json())
   .then(data => {
+    console.log(data);
       data.forEach(element => {
-          console.log(element.title)
+        output += '<li>'+element.title+'</li>';
       });
+      document.querySelector('ul').innerHTML = output;
   });
 
+  
 
-const brand = 'MAC';
 
-h1.innerHTML = '<li>'+brand+'</li>';
 
