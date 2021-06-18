@@ -2,7 +2,7 @@
 const ab = ['a','a','b','a','a','a','b','a','a','b','b'];
 
 // 1. naudojamas ciklas for. Atskirai padaryti console.log
-// kiekvienai masyvo reikšmei
+// kiekvienai masyvo reikšmei + kelintas kartas
 
 for (let i = 0; i < ab.length; i++) {
     // console.log(ab[i]);
@@ -26,6 +26,8 @@ for (let i = 0; i < ab.length; i++) {
         // console.log(i);
     }
 }
+
+const cde = ['c','d','e'];
 
 // 5, 6, 7, 8 analogiškai bet su forEach ciklu ir => func
 
