@@ -27,13 +27,31 @@ document.querySelector('#_4').addEventListener('change', event => {
 
 
 //5
+// document.querySelectorAll('[name=_5]').forEach(chEl => {
+//     chEl.addEventListener('change', () => {
+//         console.log('----------------------------');
+//         document.querySelectorAll('[name=_5]').forEach(ch => {
+//             if (ch.checked) {
+//                 console.log(ch.value);
+//             }
+//         });
+//     });
+// });
+
+
+//6. 
+const h1 = document.querySelector('h1');
+
+
 document.querySelectorAll('[name=_5]').forEach(chEl => {
     chEl.addEventListener('change', () => {
         console.log('----------------------------');
+        let out = '';
         document.querySelectorAll('[name=_5]').forEach(ch => {
             if (ch.checked) {
-                console.log(ch.value);
+                out += ch.value + ' ';
             }
         });
+        h1.innerText = out;
     });
 });
