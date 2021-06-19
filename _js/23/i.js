@@ -4,5 +4,10 @@ console.log(document.querySelector('#_1').value));
 
 
 //2
-document.querySelector('#_2').addEventListener('change', sel =>
-console.log(sel.target.value));
+document.querySelector('#_2').addEventListener('change', event =>
+console.log(event.target.value));
+
+//3 
+document.querySelectorAll('[name=_3]').forEach(radio => {
+    radio.addEventListener('change', event => console.log(event.target.value));
+})
