@@ -63,17 +63,26 @@ document.querySelectorAll('[name=_5]').forEach(chEl => {
 });
 
 const bbz = (val) => {
-    console.log(val);
+    const textN = document.createTextNode(val); // DOM dalis
+    const element = document.createElement('h3'); // DOM dalis
+    element.appendChild(textN);
+    where.appendChild(element);
 }
 
 //6. 
 const h1 = document.querySelector('h1');
 
+
+
+const where = document.querySelector('body');
+
 document.querySelector('#go').addEventListener('click', () => {
-    arr1.forEach((val) => {
-        console.log(val);
-    });
+
+    arr1.forEach(bbz);
     arr2.forEach(bbz);
+    arr3.forEach(bbz);
+    arr4.forEach(bbz);
+    
 });
 
 
