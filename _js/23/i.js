@@ -82,6 +82,12 @@ document.querySelector('#go').addEventListener('click', () => {
     arr2.forEach(bbz);
     arr3.forEach(bbz);
     arr4.forEach(bbz);
+    arr5.forEach(v =>{
+        console.log(v);
+        let allTextsInOne = ''
+        v.forEach(t => allTextsInOne += t + ' ');
+        bbz(allTextsInOne);
+    });
     
 });
 
