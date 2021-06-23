@@ -63,10 +63,15 @@ document.querySelectorAll('[name=_5]').forEach(chEl => {
 });
 
 const bbz = (val) => {
-    const textN = document.createTextNode(val); // DOM dalis
-    const element = document.createElement('h3'); // DOM dalis
-    element.appendChild(textN);
-    where.appendChild(element);
+    if (Array.isArray(val)) { // ar masyvas
+        val.forEach(bbz);// rekursija
+    }
+    else {
+        const textN = document.createTextNode(val); // DOM dalis
+        const element = document.createElement('h3'); // DOM dalis
+        element.appendChild(textN);
+        where.appendChild(element);
+    }
 }
 
 //6. 
@@ -89,6 +94,53 @@ document.querySelector('#go').addEventListener('click', () => {
         bbz(allTextsInOne);
     });
     
+});
+
+//________________10________________
+
+document.querySelector('#reset').addEventListener('click', () => {
+
+    arr1 = arr2 = arr3 = arr4 = arr5 = [];
+    
+});
+
+//________________11________________
+
+document.querySelector('#clear').addEventListener('click', () => {
+
+    document.querySelectorAll('h3').forEach(h3 => h3.remove());
+    
+});
+
+
+//________________12________________
+document.querySelector('#gojson').addEventListener('click', () => {
+    const obj = {
+        arr1: arr1,
+        arr2: arr2,
+        arr3: arr3,
+        arr4: arr4,
+        arr5: arr5
+    }
+    const jsonString = JSON.stringify(obj);
+    console.log(jsonString);
+    const obj2 = JSON.parse(jsonString);
+    console.log(obj2);
+
+    // Antika
+    // const keys = Object.keys(obj2);
+    // for (let i = 0; i < keys.length; i++) {
+    //     console.log(obj2[keys[i]]);
+    // }
+
+    // Object.entries(obj2).forEach(item => {
+    //     console.log(item)
+    //   })
+
+    for(const prop in obj2) {
+        console.log(obj2[prop]);
+        obj2[prop].forEach(bbz);
+    }
 });
 
 
