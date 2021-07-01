@@ -1,15 +1,28 @@
 // NR 1
 
 class Kibiras1 {
+
+    static bendrasAkmenuKiekis = 0;
+
+    static skaiciuotiVisusAkmenis(kiekis) {
+        this.bendrasAkmenuKiekis += kiekis;
+    }
+
+    static kiekPririnktaAkmenu() {
+        console.log('Viso jau surinkta tiek', this.bendrasAkmenuKiekis, 'akmenų');
+    }
+
     constructor() {
         this.akmenuKiekis = 0;
     }
 
     prideti1Akmeni() {
+        this.constructor.skaiciuotiVisusAkmenis(1);
         this.akmenuKiekis ++;
     }
 
     pridetiDaugAkmenu(kiekis) {
+        this.constructor.skaiciuotiVisusAkmenis(kiekis);
         this.akmenuKiekis += kiekis;
     }
 
@@ -26,6 +39,7 @@ const kasikas = new Kibiras1();
 kibiras.kiekPririnktaAkmenu();
 viedras.kiekPririnktaAkmenu();
 kasikas.kiekPririnktaAkmenu();
+Kibiras1.kiekPririnktaAkmenu();
 console.log('------------------------------');
 
 viedras.prideti1Akmeni(100);
@@ -34,6 +48,7 @@ viedras.prideti1Akmeni(100);
 kibiras.kiekPririnktaAkmenu();
 viedras.kiekPririnktaAkmenu();
 kasikas.kiekPririnktaAkmenu();
+Kibiras1.kiekPririnktaAkmenu();
 console.log('------------------------------');
 
 
@@ -44,6 +59,7 @@ viedras.pridetiDaugAkmenu(22);
 kibiras.kiekPririnktaAkmenu();
 viedras.kiekPririnktaAkmenu();
 kasikas.kiekPririnktaAkmenu();
+Kibiras1.kiekPririnktaAkmenu();
 console.log('------------------------------');
 
 
