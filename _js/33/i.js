@@ -87,3 +87,98 @@ plastikinePinigine.ideti(10);
 odinePinigine.skaiciuoti();
 plastikinePinigine.skaiciuoti();
 console.log('------------------------------');
+
+// NR 4.
+
+
+class PirkiniuKrepselis {
+
+    constructor() {
+        this.turinys = new Map();
+    }
+
+    idetiProdukta(kiekis, produktas) {
+        if (this.turinys.has(produktas)) {
+            const t = this.turinys.get(produktas);
+            this.turinys.set(produktas, kiekis + t);
+        }
+        else {
+            this.turinys.set(produktas, kiekis);
+        }
+    }
+
+    idetiSureli(kiekis) {
+        this.idetiProdukta(kiekis, 'sureliai');
+    }
+
+    idetiPieno(kiekis) {
+        this.idetiProdukta(kiekis, 'pienukas');
+    }
+
+    idetiDuonos(kiekis) {
+        this.idetiProdukta(kiekis, 'batonai');
+    }
+
+    krepselioTurinys() {
+        console.log('KR TR', this.turinys);
+    }
+}
+
+
+const krepselis = new PirkiniuKrepselis();
+
+
+krepselis.krepselioTurinys();
+console.log('------------------------------');
+
+krepselis.idetiPieno(1);
+krepselis.idetiSureli(5);
+krepselis.idetiSureli(11);
+krepselis.idetiDuonos(1);
+krepselis.idetiPieno(2);
+
+krepselis.krepselioTurinys();
+console.log('------------------------------');
+
+
+// NR 3.
+
+class Troleibusas {
+
+    constructor() {
+        this.keleiviuSkaicius = 0;
+    }
+
+    ilipa(keleiviuSkaicius) {
+        this.keleiviuSkaicius += keleiviuSkaicius;
+    }
+
+    islipa(keleiviuSkaicius) {
+        if (keleiviuSkaicius > this.keleiviuSkaicius) {
+            console.log('Per daug keleivių išlipa!');
+            this.keleiviuSkaicius = 0;
+        }
+        else {
+            this.keleiviuSkaicius -= keleiviuSkaicius;
+        }
+    }
+
+    vaziuoja() {
+        console.log('Šiuo metu važiuoja', this.keleiviuSkaicius, 'keleivių');
+    }
+}
+
+const TR5 = new Troleibusas;
+
+TR5.vaziuoja();
+console.log('------------------------------');
+
+TR5.ilipa(22);
+TR5.islipa(12);
+TR5.islipa(5);
+TR5.ilipa(22);
+TR5.islipa(50);
+TR5.islipa(50);
+
+TR5.vaziuoja();
+console.log('------------------------------');
