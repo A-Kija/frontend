@@ -68,21 +68,29 @@ console.log('------------------------------');
 class Pinigine {
 
     constructor() {
-        this.popieriniaiPinigai = 0;
-        this.metaliniaiPinigai = 0;
+        this.popieriniaiPinigai = [0];
+        this.metaliniaiPinigai = [0];
     }
 
     ideti(kiekis) {
         if (kiekis <= 2) {
-            this.metaliniaiPinigai += kiekis;
+            this.metaliniaiPinigai.push(kiekis);
         }
         else {
-            this.popieriniaiPinigai += kiekis;
+            this.popieriniaiPinigai.push(kiekis);
         }
     }
 
+    banknotai() {
+        console.log('Yra va tiek banknotų', this.popieriniaiPinigai.length -1)
+    }
+
+    monetos() {
+        console.log('Yra va tiek monetų', this.metaliniaiPinigai.length -1)
+    }
+
     skaiciuoti() {
-        console.log('Yra va tiek pinigų', this.metaliniaiPinigai + this.popieriniaiPinigai);
+        console.log('Yra va tiek pinigų', this.metaliniaiPinigai.reduce((a, v) => a + v) + this.popieriniaiPinigai.reduce((a, v) => a + v));
     }
 } 
 
@@ -91,6 +99,8 @@ const plastikinePinigine = new Pinigine();
 
 odinePinigine.skaiciuoti();
 plastikinePinigine.skaiciuoti();
+plastikinePinigine.banknotai();
+plastikinePinigine.monetos();
 console.log('------------------------------');
 
 odinePinigine.ideti(235);
@@ -102,6 +112,8 @@ plastikinePinigine.ideti(10);
 
 odinePinigine.skaiciuoti();
 plastikinePinigine.skaiciuoti();
+odinePinigine.banknotai();
+plastikinePinigine.monetos();
 console.log('------------------------------');
 
 // NR 4.
