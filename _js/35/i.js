@@ -25,21 +25,27 @@ console.log(map1);
 //3
 class Sorter {
 
-    static sortAsc(data) {
+    static sortAsc(data, byKey = false) {
         if (data instanceof Array) {
             return this.sortArrAsc(data)
         }
         if (data instanceof Set) {
             return this.sortSetAsc(data)
         }
+        if (data instanceof Map) {
+            return this.sortArrAscM(data,!byKey)
+        }
 
     }
-    static sortDesc(data) {
+    static sortDesc(data, byKey = false) {
         if (data instanceof Array) {
             return this.sortArrDesc(data)
         }
         if (data instanceof Set) {
             return this.sortSetDesc(data)
+        }
+        if (data instanceof Map) {
+            return this.sortArrDescM(data,!byKey)
         }
     }
 
@@ -75,8 +81,37 @@ class Sorter {
         });
         return arr;
     }
+
+    static sortArrAscM(map, byValue = true) {
+        const key = byValue ? 1 : 0;
+        const arr = [...map];
+        
+        arr.sort((a, b) => {
+            if (a[key] === b[key]) {
+                return 0;
+            }
+            return a[key] < b[key] ? -1 : 1;
+        });
+        map.clear();
+        arr.forEach(v => map.set(v[0], v[1]));
+        return map;
+    }
+    static sortArrDescM(map, byValue = true) {
+        const key = byValue ? 1 : 0;
+        const arr = [...map];
+        arr.sort((a, b) => {
+            if (a[key] === b[key]) {
+                return 0;
+            }
+            return a[key] > b[key] ? -1 : 1;
+        });
+        map.clear();
+        arr.forEach(v => map.set(v[0], v[1]));
+        return map;
+    }
 }
 
 
 console.log(Sorter.sortAsc(mas1));
-console.log(Sorter.sortDesc(set1));
+console.log(Sorter.sortAsc(set1));
+console.log(Sorter.sortAsc(map1, true));
