@@ -1,6 +1,6 @@
 const mas1 = ['cat', 'bird', 'tiger', 'dog'];
 const set1 = new Set(['cat', 'bird', 'tiger', 'dog']);
-const map1 = new Map([['medium','cat'], ['small','bird'], ['big','tiger'], ['unknown','dog']]);
+const map1 = new Map([ ['t','cat'], ['u','bird'], ['b','tiger'], ['a','dog'] ]);
 
 console.log(mas1);
 console.log(set1);
@@ -85,7 +85,6 @@ class Sorter {
     static sortArrAscM(map, byValue = true) {
         const key = byValue ? 1 : 0;
         const arr = [...map];
-        
         arr.sort((a, b) => {
             if (a[key] === b[key]) {
                 return 0;
@@ -96,17 +95,28 @@ class Sorter {
         arr.forEach(v => map.set(v[0], v[1]));
         return map;
     }
+
     static sortArrDescM(map, byValue = true) {
-        const key = byValue ? 1 : 0;
         const arr = [...map];
-        arr.sort((a, b) => {
-            if (a[key] === b[key]) {
-                return 0;
-            }
-            return a[key] > b[key] ? -1 : 1;
-        });
+        console.log(arr);
+        if (byValue) {
+            arr.sort((a, b) => {
+                if (a[1] === b[1]) {
+                    return 0;
+                }
+                return a[1] > b[1] ? -1 : 1;
+            });
+        }
+        else {
+            arr.sort((a, b) => {
+                // if (a[0] === b[0]) {
+                //     return 0;
+                // }
+                return a[0] > b[0] ? -1 : 1;
+            }); 
+        }
         map.clear();
-        arr.forEach(v => map.set(v[0], v[1]));
+        arr.forEach(value => map.set(value[0], value[1])); //   value
         return map;
     }
 }
