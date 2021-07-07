@@ -131,24 +131,103 @@ do {
 
 console.log('a3', a3);
 
-
+console.log('********************');
 // let y = 100;
+for(let z=0; z<20; z++) {
 const a4 = new Map();
 let counter14;
 do {
     const r = rand(10, 20);
     if (r === 13) {
-        a4.set(rand(10, 20), r+'');
+        a4.set(rand(10, 20), '***');
     }
     else {
         a4.set(rand(10, 20), r);
     }
     counter14 = 0;
-    a4.forEach(v => v == 13 ? counter14++ : counter14);
+    a4.forEach(v => v == '***' ? counter14++ : counter14);
 
-} while (counter14 < 3 );
+} while ( counter14 < 3 );
 
 console.log('a4', a4);
+}
+console.log('********************');
+
+
+function arr_diff (a1, a2) {
+    var a = [], diff = [];
+    for (var i = 0; i < a1.length; i++) {
+        a[a1[i]] = true;
+    }
+    for (var i = 0; i < a2.length; i++) {
+        if (a[a2[i]]) {
+            delete a[a2[i]];
+        } else {
+            a[a2[i]] = true;
+        }
+    }
+    for (var k in a) {
+        diff.push(k);
+    }
+    return diff;
+}
+
+function makeArray(from, to) {
+    const a = [];
+    for (let i = from; i < to; i++) {
+        a.push(i);
+    }
+    return a;
+}
+
+
+
+
+
+// E.
+const a5 = new Set();
+do {
+    a5.add(rand(10, 20));
+} while (a5.size < 8);
+
+for (let i = 10; i < 21; i++) {
+    if (a5.has(i)) {
+        continue;// einame ir imame sekanti I
+    }
+    console.log(i);
+}
+
+console.log(makeArray(10, 21));
+
+console.log(  arr_diff([...a5], makeArray(10, 21))   );
+
+
+
+
+console.log('a5', a5);
+
+//F.
+const a6 = new Map();
+// let counter16 = 40;
+// let mapToArray = [];
+let search = true;
+do {
+    a6.set(rand(10, 20), rand(10, 20));
+    //A6  5 => 9, 7 => 9
+    //TMP 5 => 2, 6 => 1
+    const tmp = new Map();
+    a6.forEach(v => {tmp.has(v) ?
+        tmp.set(v, tmp.get(v) + 1) :
+        tmp.set(v, 1);
+        if (tmp.get(v) >= 3) {
+            console.log(v);
+            search = false;
+        }
+    });
+} while (search);
+
+console.log('a6', a6);
+// console.log('arr', mapToArray);
 
 
 
