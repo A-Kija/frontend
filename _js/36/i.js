@@ -1,6 +1,9 @@
+//Kuku kazkas naujo
+
+
 const json = '[{"id":1,"title":"MAC"},{"id":2,"title":"Nike"},{"id":3,"title":"Victoria\u2019s Secret"},{"id":4,"title":"Zara"},{"id":5,"title":"Zizzi"},{"id":6,"title":"Witteveen"},{"id":7,"title":"H&M"},{"id":8,"title":"RIMOWA"},{"id":9,"title":"Adidas"},{"id":10,"title":"Paw Patrol"},{"id":11,"title":"Mattel"},{"id":12,"title":"Kenzo"},{"id":13,"title":"Asos"}]';
 
-const json1 = [{id:1,title:"MAC"},{id:2,title:"Nike"},{id:3,title:"Victoria\u2019s Secret"},{id:4,title:"Zara"},{id:5,title:"Zizzi"},{id:6,title:"Witteveen"},{id:7,title:"H&M"},{id:8,title:"RIMOWA"},{id:9,title:"Adidas"},{id:10,title:"Paw Patrol"},{id:11,title:"Mattel"},{id:12,title:"Kenzo"},{id:13,title:"Asos"}];
+const json1 = [{ id: 1, title: "MAC" }, { id: 2, title: "Nike" }, { id: 3, title: "Victoria\u2019s Secret" }, { id: 4, title: "Zara" }, { id: 5, title: "Zizzi" }, { id: 6, title: "Witteveen" }, { id: 7, title: "H&M" }, { id: 8, title: "RIMOWA" }, { id: 9, title: "Adidas" }, { id: 10, title: "Paw Patrol" }, { id: 11, title: "Mattel" }, { id: 12, title: "Kenzo" }, { id: 13, title: "Asos" }];
 
 console.log('json', json);
 console.log('json1', json1);
@@ -35,12 +38,17 @@ const fe = arr.forEach(v => [v.id, v.title]);
 
 console.log(mp, fe);
 
-const s = new Set(['t','cat']);
+const s = new Set(['t', 'cat']);
 
 
 console.log(s);
 
-const map33 = new Map([ [...s], ['u','bird'], ['b','tiger'], ['a','dog'] ]);
+const map33 = new Map([
+    [...s],
+    ['u', 'bird'],
+    ['b', 'tiger'],
+    ['a', 'dog']
+]);
 
 console.log(map33);
 
@@ -115,12 +123,11 @@ const a2 = [];
 let counter13 = 0;
 do {
     const r = rand(10, 20);
-    
+
     if (r === 13) {
-        a2.push(r+'');
+        a2.push(r + '');
         counter13++;
-    }
-    else {
+    } else {
         a2.push(r);
     }
 
@@ -138,29 +145,29 @@ console.log('a3', a3);
 
 console.log('********************');
 // let y = 100;
-for(let z=0; z<20; z++) {
-const a4 = new Map();
-let counter14;
-do {
-    const r = rand(10, 20);
-    if (r === 13) {
-        a4.set(rand(10, 20), '***');
-    }
-    else {
-        a4.set(rand(10, 20), r);
-    }
-    counter14 = 0;
-    a4.forEach(v => v == '***' ? counter14++ : counter14);
+for (let z = 0; z < 20; z++) {
+    const a4 = new Map();
+    let counter14;
+    do {
+        const r = rand(10, 20);
+        if (r === 13) {
+            a4.set(rand(10, 20), '***');
+        } else {
+            a4.set(rand(10, 20), r);
+        }
+        counter14 = 0;
+        a4.forEach(v => v == '***' ? counter14++ : counter14);
 
-} while ( counter14 < 3 );
+    } while (counter14 < 3);
 
-console.log('a4', a4);
+    console.log('a4', a4);
 }
 console.log('********************');
 
 
-function arr_diff (a1, a2) {
-    var a = [], diff = [];
+function arr_diff(a1, a2) {
+    var a = [],
+        diff = [];
     for (var i = 0; i < a1.length; i++) {
         a[a1[i]] = true;
     }
@@ -197,14 +204,14 @@ do {
 
 for (let i = 10; i < 21; i++) {
     if (a5.has(i)) {
-        continue;// einame ir imame sekanti I
+        continue; // einame ir imame sekanti I
     }
     console.log(i);
 }
 
 console.log(makeArray(10, 21));
 
-console.log(  arr_diff([...a5], makeArray(10, 21))   );
+console.log(arr_diff([...a5], makeArray(10, 21)));
 
 
 
@@ -221,9 +228,10 @@ do {
     //A6  5 => 9, 7 => 9
     //TMP 5 => 2, 6 => 1
     const tmp = new Map();
-    a6.forEach(v => {tmp.has(v) ?
-        tmp.set(v, tmp.get(v) + 1) :
-        tmp.set(v, 1);
+    a6.forEach(v => {
+        tmp.has(v) ?
+            tmp.set(v, tmp.get(v) + 1) :
+            tmp.set(v, 1);
         if (tmp.get(v) >= 3) {
             console.log(v);
             search = false;
@@ -233,6 +241,3 @@ do {
 
 console.log('a6', a6);
 // console.log('arr', mapToArray);
-
-
-
